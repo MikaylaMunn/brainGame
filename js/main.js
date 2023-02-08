@@ -13,7 +13,7 @@ div.className = 'col-6 justify-content-center btn';
 div2.className = 'justify-content-center';
 div3.className = 'justify-content-center mt-2';
 div3.innerHTML = 
-`<a class="ui inverted red button col-7 justify-content-cente mt-2" href="https://wikipedia.tlm.cloud/wikipedia_en_computer_2017-04/A/Hippocampus.html">Study of the Brain</a>`
+`<a class="ui inverted red button col-7 justify-content-cente mt-2" href="https://en.wikipedia.org/wiki/Human_brain">Study of the Brain</a>`
 btnStart.className = "ui inverted red button col-7 justify-content-center";
 btnQuestion.className = "ui inverted red button mt-3 col-7  justify-content-center";
 btnStart.id = "btn-open";
@@ -41,7 +41,7 @@ btnStart.addEventListener("click", function () {
 })
 btnQuestion.addEventListener("click", function () {
     questionToAdd.classList.remove('hiddenFromView');
-    brainGame.classList.add('hiddenFromView');
+    brainGame.classList.remove('hiddenFromView');
     contentLabel.classList.add('hiddenFromView');
     image.classList.add('hiddenFromView');
     anatomy.classList.add('hiddenFromView');
@@ -140,7 +140,7 @@ function showFinalResults() {
         <h2>Below are your results:</h2> 
         <h2>  ${score}  out of  ${questionBank.length} questions,  ${percent} 
         %<h2>
-        <a class="ui inverted button form-control text-center m-2 w-25" href="https://wikipedia.tlm.cloud/wikipedia_en_computer_2017-04/A/Hippocampus.html">Study of the Brain</a>`
+        <a class="ui inverted button form-control text-center m-2 w-25" href="https://en.wikipedia.org/wiki/Human_brain">Study of the Brain</a>`
             + `<div><h1> Thank You for Playing!!</h1></div>`;
     }
 };
