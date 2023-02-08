@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+ /* content background to match the brain color */
+ .aurther {
+    color: rgb(89, 120, 177);
+ }
+ .brain,
+ .brainImg {
+    width: 300px;
+    border: solid 5px black;
+    margin-top: 5rem;
+ }
+ .showUp {
+    color:  rgb(225, 96, 86);
+ }
+ #question,
+ #choices {
+    font-size: 24px;
+    text-shadow:  2px 2px 2px black;
+ }
+ /* using the areas I have hard coded in this section */
+ section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: rgb(225, 96, 86);
+ }
+ label {
+    line-height: 2.0;
+    text-shadow:  2px 2px 2px black;
+ }
+ footer {
+    height: 13vh;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 0;
+    background-color: rgb(189, 246, 71);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px darkred;
+ }
+h2 {
+    color: rgb(189, 246, 71);
+    text-shadow:  3px 3px 4px black;
+}
+h1 {
+    text-align: center;
+    font-family: signPainter;
+    font-size: 10em;
+    -webkit-background-clip: text;
+    color: rgb(189, 246, 71);
+    text-shadow: 5px 5px 2px black;
+}
+/* hidden (not seen until something happens on the scrren) until they enter the quiz */
+.hiddenFromView {
+    display: none;
+}
+#imageBrain {
+    color: white;
+}
+.brain-container {
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+}
+.brain-box {
+    width: 300px;
+}
+.btn {
+    margin-top: 20em;
+}
+#score {
+    margin-bottom: 1em;
+}
